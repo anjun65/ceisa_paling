@@ -788,32 +788,28 @@
                                         @endif
 
                                         {{-- @forelse ($petikemas as $petikema)
-                                        <x-table.row wire:loading.class.delay="opacity-50" wire:key="row-{{ $petikema->id }}">
+                                        <x-table.row wire:loading.class.delay="opacity-50" wire:key="row-{{ $petikemas->id }}">
                                             <x-table.cell class="pr-0">
-                                                <x-input.checkbox wire:model="selected" value="{{ $petikema->id }}" />
+                                                <x-input.checkbox wire:model="selected" value="{{ $petikemas->id }}" />
                                             </x-table.cell>
 
                                             <x-table.cell>
-                                                <span class="text-cool-gray-900 font-medium">{{ $petikema->seri }} </span>
+                                                <span class="text-cool-gray-900 font-medium">{{ $petikemas->nomor }} </span>
                                             </x-table.cell>
 
                                             <x-table.cell>
-                                                <span class="text-cool-gray-900 font-medium">{{ $petikema->jenis_dokumen }} </span>
+                                                <span class="text-cool-gray-900 font-medium">{{ $petikemas->tipe }} </span>
                                             </x-table.cell>
 
                                             <x-table.cell>
-                                                <span class="text-cool-gray-900 font-medium">{{ $petikema->nomor_dokumen }} </span>
-                                            </x-table.cell>
-
-                                            <x-table.cell>
-                                                <span class="text-cool-gray-900 font-medium">{{ $petikemas->tanggal_dokumen }} </span>
+                                                <span class="text-cool-gray-900 font-medium">{{ $petikemas->ukuran }} </span>
                                             </x-table.cell>
 
                                             <x-table.cell>
                                                 <x-button.link wire:click="edit({{ $petikemas->id }})">Edit</x-button.link>
                                             </x-table.cell>
-                                        </x-table.row>
-                                        @empty --}}
+                                        </x-table.row> --}}
+                                        {{-- @empty --}}
                                         <x-table.row>
                                             <x-table.cell colspan="8">
                                                 <div class="flex justify-center items-center space-x-2">
@@ -856,11 +852,11 @@
 
                                 <x-slot name="content">
 
-                                    <x-input.group for="no_kontainer" label="Nomor Kontainer">
+                                    <x-input.group for="nomor" label="Nomor Kontainer">
                                         <x-input.text id="no_kontainer" placeholder="Nomor Kontainer"/>
                                     </x-input.group>
 
-                                    <x-input.group for="tipe_kontainer" label="Tipe Kontainer">
+                                    <x-input.group for="tipe" label="Tipe Kontainer">
                                         <x-input.select id="perPage">
                                             <option value="" selected>Belum Memilih</option>
                                             <option value="F - FCL">F - FCL</option>
@@ -868,7 +864,7 @@
                                         </x-input.select>
                                     </x-input.group>
 
-                                    <x-input.group for="tipe_kontainer" label="Tipe Kontainer">
+                                    <x-input.group for="ukuran" label="Tipe Kontainer">
                                         <x-input.select wire:model="perPage" id="perPage">
                                             <option value="" selected>Belum Memilih</option>
                                             <option value="20 - 20 Feet">20 - 20 Feet</option>

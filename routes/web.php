@@ -10,6 +10,7 @@ use App\Http\Livewire\Admin\ManageUser;
 use App\Http\Livewire\DokumenPabean;
 use App\Http\Livewire\CreateDokumenPabean;
 use App\Http\Livewire\Ppftz;
+use App\Http\Livewire\Home;
 
 use App\Http\Livewire\Admin\Config;
 
@@ -19,13 +20,15 @@ use App\Http\Livewire\Admin\Config\DocumentCode as ConfigDocumentCode;
 use App\Http\Livewire\Admin\Config\CaraPengangkutan as ConfigCaraPengangkutan;
 use App\Http\Livewire\Admin\IzinImpor as AdminIzinImpor;
 use App\Http\Livewire\Admin\SuratKuasa as SuratKuasaAdmin;
+use App\Http\Livewire\Admin\Home as ConfigHome;
 
-Route::redirect('/', 'dashboard');
+// Route::redirect('/', 'dashboard');
 
 /**
  * App Routes
  */
 Route::middleware('auth')->group(function () {
+    Route::get('/', Home::class);
     Route::get('/dashboard', Dashboard::class);
     Route::get('/profile', Profile::class);
     Route::get('/suratkuasa', SuratKuasa::class);
@@ -43,6 +46,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dokumen-pabean', DokumenPabean::class);
     Route::get('/create-dokumen-pabean/{nomor_aju_pabean}', CreateDokumenPabean::class)->name('edit-dokumen-pabean');
 
+    Route::get('/admin', Home::class);
+
     Route::get('/admin/users', ManageUser::class);
 
     Route::get('/admin/config', Config::class);
@@ -50,6 +55,7 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/config/valuta', ConfigValuta::class)->name('valuta-config');
     Route::get('/admin/config/document-code', ConfigDocumentCode::class)->name('document-code-config');
     Route::get('/admin/config/cara-pengangkutan', ConfigCaraPengangkutan::class)->name('cara-pengangkutan-config');
+    Route::get('/admin/config/home', ConfigHome::class)->name('home-config');
 
 
     Route::get('/admin/suratkuasa', SuratKuasaAdmin::class);

@@ -266,9 +266,6 @@ class CreateDokumenPabean extends Component
 
     public function render()
     {
-        return view('livewire.create-dokumen-pabean', [
-            'dokumens' => $this->rows,
-            'petikemas' =>$this->petikemas,
-        ]);
+        return view('livewire.create-dokumen-pabean');
     }
 }
