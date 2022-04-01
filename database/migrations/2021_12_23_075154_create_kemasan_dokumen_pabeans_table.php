@@ -20,7 +20,7 @@ class CreateKemasanDokumenPabeansTable extends Migration
             $table->integer('seri');
             $table->integer('jumlah');
             $table->string('jenis');
-            $table->date('merek');
+            $table->string('merek');
 
             $table->timestamps();
         });

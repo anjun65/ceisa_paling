@@ -21,6 +21,8 @@ class CreateDokumenLainsTable extends Migration
             $table->string('jenis_dokumen');
             $table->string('nomor_dokumen');
             $table->date('tanggal_dokumen');
+            
+            $table->string('file');
 
             $table->timestamps();
         });

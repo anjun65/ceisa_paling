@@ -21,7 +21,7 @@ class CreatePetiKemasDokumenPabeansTable extends Migration
             $table->integer('nomor');
             $table->string('ukuran');
             $table->string('jenis');
-            $table->date('tipe');
+            $table->string('tipe');
 
             $table->timestamps();
         });

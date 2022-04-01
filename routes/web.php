@@ -9,6 +9,13 @@ use App\Http\Livewire\izinImpor;
 use App\Http\Livewire\Admin\ManageUser;
 use App\Http\Livewire\DokumenPabean;
 use App\Http\Livewire\CreateDokumenPabean;
+
+use App\Http\Controllers\EditDokumenPabean;
+use App\Http\Livewire\DatangBarang;
+use App\Http\Livewire\DataDokumen;
+use App\Http\Livewire\DataPeti;
+use App\Http\Livewire\DataKemasan;
+
 use App\Http\Livewire\Ppftz;
 use App\Http\Livewire\Home;
 
@@ -44,7 +51,13 @@ Route::middleware('auth')->group(function () {
     Route::get('/ppftz', DokumenPabean::class);
 
     Route::get('/dokumen-pabean', DokumenPabean::class);
-    Route::get('/create-dokumen-pabean/{nomor_aju_pabean}', CreateDokumenPabean::class)->name('edit-dokumen-pabean');
+    // Route::get('/create-dokumen-pabean/{nomor_aju_pabean}', CreateDokumenPabean::class)->name('edit-dokumen-pabean');
+
+    Route::get('/edit-dokumen-pabean/{nomor_aju_pabean}', [EditDokumenPabean::class, 'index'])->name('edit-pabean');;
+    Route::get('/edit-data-barang/{nomor_aju_pabean}', DatangBarang::class)->name('edit-barang');
+    Route::get('/edit-data-dokumen/{nomor_aju_pabean}', DataDokumen::class)->name('edit-dokumen');
+    Route::get('/edit-data-peti/{nomor_aju_pabean}', DataPeti::class)->name('edit-peti');
+    Route::get('/edit-data-kemasan/{nomor_aju_pabean}', DataKemasan::class)->name('edit-kemasan');
 
     Route::get('/admin', Home::class);
 

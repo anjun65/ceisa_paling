@@ -15,5 +15,6 @@ class DokumenLain extends Model
         'jenis_dokumen',
         'nomor_dokumen',
         'tanggal_dokumen',
+        'file'
     ];
 }
