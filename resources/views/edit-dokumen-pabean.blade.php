@@ -191,8 +191,8 @@
 
                                                     <div class="grid grid-cols-4 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nomor Pengajuan</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="kantor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Kantor Pengajuan</label>
+                                                            <x-input.select name="kantor_aju_pabean" id="kantor_aju_pabean">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="DIREKTORAT IKC">DIREKTORAT IKC</option>
                                                                 <option value="KPPBC TMP B TANJUNG BALAI KARIMUN">KPPBC TMP B TANJUNG BALAI KARIMUN</option>
@@ -203,8 +203,8 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Kategori Pemberitahuan</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="kategori_pemberitahuan" class="block text-sm font-medium text-gray-700 mb-4">Kategori Pemberitahuan</label>
+                                                            <x-input.select name="kategori_pemberitahuan" id="kategori_pemberitahuan">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="1 - Biasa">1 - Biasa</option>>
                                                                 <option value="2- Berkala">2- Berkala</option>>
@@ -212,8 +212,8 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Kategori Pemasukan</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="kategori_pemasukan" class="block text-sm font-medium text-gray-700 mb-4">Kategori Pemasukan</label>
+                                                            <x-input.select  name="kategori_pemasukan" id="kategori_pemasukan">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="1 - Pemasukan Biasa">1 - Pemasukan Biasa</option>
                                                                 <option value="2 - Pemasukan Sementara ke Kawasan Bebas">2 - Pemasukan Sementara ke Kawasan Bebas</option>
@@ -222,8 +222,8 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Tujuan Pemasukan</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="tujuan_pemasukan" class="block text-sm font-medium text-gray-700 mb-4">Tujuan Pemasukan</label>
+                                                            <x-input.select name="tujuan_pemasukan" id="tujuan_pemasukan">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="1 - Dijual">1 - Dijual</option>
                                                                 <option value="2 - Dipergunakan">2 - Dipergunakan</option>
@@ -233,8 +233,8 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Asal Barang</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="asal_barang" class="block text-sm font-medium text-gray-700 mb-4">Asal Barang</label>
+                                                            <x-input.select name="asal_barang" id="asal_barang">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="1 - sepenuhnya diperoleh dan/atau diproduksi di luar Daerah Pabean">1 - sepenuhnya diperoleh dan/atau diproduksi di luar Daerah Pabean</option>
                                                                 <option value="2 - sepenuhnya diperoleh dan/atau diproduksi di tempat lain dalam Daerah Pabean">2 - sepenuhnya diperoleh dan/atau diproduksi di tempat lain dalam Daerah Pabean</option>
@@ -243,8 +243,8 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jenis Faktur</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="jenis_faktur" class="block text-sm font-medium text-gray-700 mb-4">Jenis Faktur</label>
+                                                            <x-input.select name="jenis_faktur" id="jenis_faktur">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="Non-Faktur">Non-Faktur</option>
                                                                 <option value="FP-01">FP-01</option>
@@ -262,8 +262,8 @@
 
                                                     <div class="grid grid-cols-2 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jenis Identitas Pengirim</label>
-                                                            <x-input.select id="kantor_pabean">
+                                                            <label for="jenis_identitas_pengirim" class="block text-sm font-medium text-gray-700 mb-4">Jenis Identitas Pengirim</label>
+                                                            <x-input.select name="jenis_identitas_pengirim" id="jenis_identitas_pengirim">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="2 - Passport">2 - Passport</option>
                                                                 <option value="3 - KTP">3 - KTP</option>
@@ -273,20 +273,19 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nomor Identitas Pengirim</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nomor_identitas_pengirim" class="block text-sm font-medium text-gray-700 mb-4">Nomor Identitas Pengirim</label>
+                                                            <x-input.date  name="nomor_identitas_pengirim" id="nomor_identitas_pengirim" placeholder="Nomor Identitas" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nama Pengirim</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nama_pengirim" class="block text-sm font-medium text-gray-700 mb-4">Nama Pengirim</label>
+                                                            <x-input.text name="nama_pengirim" id="nama_pengirim" placeholder="Nama Pengirim" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Alamat Pengirim</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="alamat_pengirim" class="block text-sm font-medium text-gray-700 mb-4">Alamat Pengirim</label>
+                                                            <x-input.text name="alamat_pengirim" id="alamat_pengirim" placeholder="Alamat Pengirim" />
                                                         </div>
-                                                        
                                                     </div>
                                                     
                                                     <div class="flex flex-row justify-between uppercase font-bold text-blue-dark border-b p-6">
@@ -296,8 +295,8 @@
 
                                                     <div class="grid grid-cols-2 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jenis Identitas Penerima</label>
-                                                            <x-input.select wire:model="" id="kantor_pabean">
+                                                            <label for="jenis_identitas_penerima" class="block text-sm font-medium text-gray-700 mb-4">Jenis Identitas Penerima</label>
+                                                            <x-input.select name="jenis_identitas_penerima" id="jenis_identitas_penerima">
                                                                 <option value="" selected>Belum Memilih</option>
                                                                 <option value="2 - Passport">2 - Passport</option>
                                                                 <option value="3 - KTP">3 - KTP</option>
@@ -307,23 +306,23 @@
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nomor Identitas Penerima</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nomor_identitas_penerima" class="block text-sm font-medium text-gray-700 mb-4">Nomor Identitas Penerima</label>
+                                                            <x-input.text name="nomor_identitas_penerima"  id="nomor_identitas_penerima" placeholder="Nomor Identitas" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nama Penerima</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nama_penerima" class="block text-sm font-medium text-gray-700 mb-4">Nama Penerima</label>
+                                                            <x-input.text name="nama_penerima"  id="nama_penerima" placeholder="Nama Penerima" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Alamat Penerima</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="alamat_penerima" class="block text-sm font-medium text-gray-700 mb-4">Alamat Penerima</label>
+                                                            <x-input.text name="alamat_penerima"  id="alamat_penerima" placeholder="Nomor Pengajuan" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nomor Ijin Bpk Penerima</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nomor_ijin_bpk_penerima" class="block text-sm font-medium text-gray-700 mb-4">Nomor Ijin Bpk Penerima</label>
+                                                            <x-input.text name="nomor_ijin_bpk_penerima"  id="nomor_ijin_bpk_penerima" placeholder="Nomor Ijin Bpk Penerima" />
                                                         </div>
 
                                                     </div>
@@ -335,18 +334,18 @@
 
                                                     <div class="grid grid-cols-3 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">NPWP PPJK</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="npwp_ppjk" class="block text-sm font-medium text-gray-700 mb-4">NPWP PPJK</label>
+                                                            <x-input.text name="npwp_ppjk"  id="npwp_ppjk" placeholder="NPWP PPJK" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nama PPJK</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nama_ppjk" class="block text-sm font-medium text-gray-700 mb-4">Nama PPJK</label>
+                                                            <x-input.text name="nama_ppjk"  id="nama_ppjk" placeholder="Nama PPJK" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Alamat PPJK</label>
-                                                            <x-input.text  id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="alamat_ppjk" class="block text-sm font-medium text-gray-700 mb-4">Alamat PPJK</label>
+                                                            <x-input.text name="alamat_ppjk"  id="alamat_ppjk" placeholder="Alamat PPJK" />
                                                         </div>
                                                     </div>
 
@@ -357,8 +356,8 @@
 
                                                     <div class="grid grid-cols-3 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nilai Barang (IDR)</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nilai_barang" class="block text-sm font-medium text-gray-700 mb-4">Nilai Barang (IDR)</label>
+                                                            <x-input.text name="nilai_barang" type="number" min="0" id="nilai_barang" placeholder="Nilai Barang" />
                                                         </div>
                                                     </div>
 
@@ -369,28 +368,28 @@
 
                                                     <div class="grid grid-cols-5 gap-2">
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nilai Bc11</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nilai_bc11" class="block text-sm font-medium text-gray-700 mb-4">Nilai Bc11</label>
+                                                            <x-input.text name="nilai_bc11" id="nilai_bc11" type="number" min="0" placeholder="Nilai BC11" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Tanggal Bc11</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="tanggal_bc11" class="block text-sm font-medium text-gray-700 mb-4">Tanggal Bc11</label>
+                                                            <x-input.text name="tanggal_bc11" id="tanggal_bc11" placeholder="Tanggal BC11" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Pos Bc11</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="pos_bc11" class="block text-sm font-medium text-gray-700 mb-4">Pos Bc11</label>
+                                                            <x-input.text name="pos_bc11" id="pos_bc11" placeholder="Pos BC11" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Subpos Bc11</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="subpos_bc11" class="block text-sm font-medium text-gray-700 mb-4">Subpos Bc11</label>
+                                                            <x-input.text name="subpos_bc11" id="subpos_bc11" placeholder="Subpos Bc11" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Subsubpos Bc11</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="subsubpos_bc11" class="block text-sm font-medium text-gray-700 mb-4">Subsubpos Bc11</label>
+                                                            <x-input.text name="" id="subsubpos_bc11" placeholder="Subsubpos Bc11" />
                                                         </div>
                                                     </div>
 
@@ -401,23 +400,23 @@
 
                                                     <div class="grid grid-cols-4 gap-2">
                                                         <div class="p-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Cara Angkut</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="cara_angkut" class="block text-sm font-medium text-gray-700 mb-4">Cara Angkut</label>
+                                                            <x-input.text name="cara_angkut" id="cara_angkut" placeholder="Cara Angkut" />
                                                         </div>
 
                                                         <div class="p-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nama Pengangkut</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nama_angkut" class="block text-sm font-medium text-gray-700 mb-4">Nama Pengangkut</label>
+                                                            <x-input.text name="nama_angkut" id="nama_angkut" placeholder="Nama Pengangkut" />
                                                         </div>
 
                                                         <div class="p-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Bendera</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="bendera" class="block text-sm font-medium text-gray-700 mb-4">Bendera</label>
+                                                            <x-input.text name="bendera" id="bendera" placeholder="Bendera" />
                                                         </div>
 
                                                         <div class="p-6 text-grey-darker text-justify flex flex-col">
-                                                            <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Nomor Voy Flight Pol</label>
-                                                            <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                            <label for="nomor_voy_flight_pol" class="block text-sm font-medium text-gray-700 mb-4">Nomor Voy Flight Pol</label>
+                                                            <x-input.text name="nomor_voy_flight_pol" id="nomor_voy_flight_pol" placeholder="Nomor Voy Flight Pol" />
                                                         </div>
                                                     </div>
 
@@ -430,18 +429,18 @@
 
                                                             <div class="grid grid-cols-1 gap-2">
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Muat</label>
-                                                                    <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="pelabuhan_muat" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Muat</label>
+                                                                    <x-input.text name="pelabuhan_muat" id="pelabuhan_muat" placeholder="Pelabuhan Muat" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Tujuan</label>
-                                                                    <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="pelabuhan_tujuan" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Tujuan</label>
+                                                                    <x-input.text name="" id="pelabuhan_tujuan" placeholder="Pelabuhan Tujuan" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Transit</label>
-                                                                    <x-input.text wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="pelabuhan_transit" class="block text-sm font-medium text-gray-700 mb-4">Pelabuhan Transit</label>
+                                                                    <x-input.text name="pelabuhan_transit" id="pelabuhan_transit" placeholder="Pelabuhan Transit" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -454,18 +453,18 @@
 
                                                             <div class="grid grid-cols-1 gap-2">
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Berat Bersih Total (KGM)</label>
-                                                                    <x-input.text type="number" wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="berat_bersih" class="block text-sm font-medium text-gray-700 mb-4">Berat Bersih Total (KGM)</label>
+                                                                    <x-input.text type="number" name="berat_bersih" id="berat_bersih" placeholder="Berat Bersih" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Berat Kotor Total (KGM)</label>
-                                                                    <x-input.text type="number" wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="berat_kotor" class="block text-sm font-medium text-gray-700 mb-4">Berat Kotor Total (KGM)</label>
+                                                                    <x-input.text type="number" name="berat_kotor" id="berat_kotor" placeholder="Berat Kotor" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Volume (M<sup>3</sup>)</label>
-                                                                    <x-input.text type="number" wire:model="" id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="volume" class="block text-sm font-medium text-gray-700 mb-4">Volume (M<sup>3</sup>)</label>
+                                                                    <x-input.text type="number" name="volume" id="volume" placeholder="Volume" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -483,7 +482,7 @@
                                                                         <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
                                                                             <svg class="w-5 h-5 text-gray-500 dark:text-gray-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M6 2a1 1 0 00-1 1v1H4a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V6a2 2 0 00-2-2h-1V3a1 1 0 10-2 0v1H7V3a1 1 0 00-1-1zm0 5a1 1 0 000 2h8a1 1 0 100-2H6z" clip-rule="evenodd"></path></svg>
                                                                         </div>
-                                                                        <input datepicker datepicker-buttons type="text" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
+                                                                        <input datepicker datepicker-buttons type="text" name="perkiraan_tanggal_pemasukan" class="bg-gray-50 border border-gray-300 text-gray-900 sm:text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full pl-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Select date">
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -497,18 +496,18 @@
 
                                                             <div class="grid grid-cols-1 gap-2">
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Jenis Kemasan</label>
-                                                                    <x-input.text type="number" wire:model=" " id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="jumlah_jenis_kemasan" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Jenis Kemasan</label>
+                                                                    <x-input.text type="number" name="jumlah_jenis_kemasan"  id="jumlah_jenis_kemasan" placeholder="Jumlah Jenis Kemasan" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Peti Kemas</label>
-                                                                    <x-input.text type="number" wire:model=" " id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="jumlah_peti_kemas" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Peti Kemas</label>
+                                                                    <x-input.text type="number" name="jumlah_peti_kemas"  id="jumlah_peti_kemas" placeholder="Jumlah Peti Kemas" />
                                                                 </div>
 
                                                                 <div class="px-6 pt-6  text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Jenis Barang</label>
-                                                                    <x-input.text type="number" wire:model=" " id="nomor_aju_pabean" placeholder="Nomor Pengajuan" />
+                                                                    <label for="jumlah_jenis_barang" class="block text-sm font-medium text-gray-700 mb-4">Jumlah Jenis Barang</label>
+                                                                    <x-input.text type="number" name="jumlah_jenis_barang"  id="jumlah_jenis_barang" placeholder="Jumlah Jenis Barang" />
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -525,8 +524,8 @@
 
                                                             <div class="grid grid-cols-1 gap-2">
                                                                 <div class="p-6 text-grey-darker text-justify flex flex-col">
-                                                                    <label for="nomor_aju_pabean" class="block text-sm font-medium text-gray-700 mb-4">Tempat Penimbunan</label>
-                                                                    <x-input.select wire:model="entitas.negara_pengirim" id="negara">
+                                                                    <label for="tempat_penimbunan" class="block text-sm font-medium text-gray-700 mb-4">Tempat Penimbunan</label>
+                                                                    <x-input.select name="tempat_penimbunan" id="tempat_penimbunan">
                                                                         <option value="" selected>Belum Memilih</option>
                                                                         <option value="BT01 - Batu Ampar">BT01 - Batu Ampar</option>
                                                                         <option value="BT05 - Hang Nadim">BT05 - Hang Nadim</option>
