@@ -53,7 +53,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/dokumen-pabean', DokumenPabean::class);
     // Route::get('/create-dokumen-pabean/{nomor_aju_pabean}', CreateDokumenPabean::class)->name('edit-dokumen-pabean');
 
-    Route::get('/edit-dokumen-pabean/{nomor_aju_pabean}', [EditDokumenPabean::class, 'index'])->name('edit-pabean');;
+    Route::get('/edit-dokumen-pabean/{nomor_aju_pabean}', [EditDokumenPabean::class, 'index'])->name('edit-pabean');
+    Route::post('/edit-dokumen-pabean', [EditDokumenPabean::class, 'store'])->name('store-pabean');
     Route::get('/edit-data-barang/{nomor_aju_pabean}', DatangBarang::class)->name('edit-barang');
     Route::get('/edit-data-dokumen/{nomor_aju_pabean}', DataDokumen::class)->name('edit-dokumen');
     Route::get('/edit-data-peti/{nomor_aju_pabean}', DataPeti::class)->name('edit-peti');

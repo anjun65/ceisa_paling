@@ -62,10 +62,10 @@ class CreateHeaderPabeansTable extends Migration
             $table->string("volume");
 
             $table->date("perkiraan_tanggal_pemasukan");
-            $table->date("jumlah_jenis_kemasan");
-            $table->date("jumlah_peti_kemas");
-            $table->date("jumlah_jenis_barang");
-            $table->date("tempat_penimbunan");
+            $table->string("jumlah_jenis_kemasan");
+            $table->string("jumlah_peti_kemas");
+            $table->string("jumlah_jenis_barang");
+            $table->string("tempat_penimbunan");
 
             $table->timestamps();
         });
