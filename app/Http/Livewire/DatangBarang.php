@@ -3,12 +3,12 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\IzinImpor as IzinModel;
 use Illuminate\Support\Carbon;
 use App\Http\Livewire\DataTable\WithSorting;
 use App\Http\Livewire\DataTable\WithCachedRows;
 use App\Http\Livewire\DataTable\WithBulkActions;
 use App\Http\Livewire\DataTable\WithPerPagePagination;
+use App\Models\DataBarang as DatabarangModel;
 use Livewire\WithFileUploads;
 use Auth;
 
@@ -21,13 +21,9 @@ class DatangBarang extends Component
     public $showFilters = false;
     public $filters = [
         'search' => '',
-        'status' => '',
-        'perusahaan' => null,
-        'date-min' => null,
-        'date-max' => null,
+        'nomor_pengajuan_dokumen' => '',
     ];
-    public IzinModel $editing;
-
+    public DatabarangModel $editing;
     public $upload;
 
     protected $queryString = ['sorts'];
@@ -35,22 +31,17 @@ class DatangBarang extends Component
     protected $listeners = ['refreshTransactions' => '$refresh'];
 
     public function rules() { return [
-        'editing.perusahaan' => 'required',
-        'editing.alamat_perusahaan' => 'required',
-        'editing.nomor_izin_bpk' => 'required',
-        'editing.tanggal_izin' => 'required',
-        'editing.awal_berlaku' => 'required',
-        'editing.akhir_berlaku' => 'required',
-
-        'editing.npwp_perusahaan' => 'required',
-        'editing.tanggal_izin' => 'required',
-        'editing.nomor_surat' => 'required',
-        'editing.tanggal_surat' => 'required',
-        'editing.kantor_bc_ftz' => 'required',
-        // 'editing.upload_dokumen' => 'required',
+        'editing.pos_tarif' => 'required',
+        'editing.uraian_barang' => 'required',
+        'editing.merek' => 'required',
+        'editing.jumlah_satuan' => 'required',
+        'editing.bruto' => 'required',
     ]; }
 
-    public function mount() { $this->editing = $this->makeBlankTransaction(); }
+    public function mount($nomor_aju_pabean) { 
+        $this->filters['nomor_pengajuan_dokumen'] = $nomor_aju_pabean;
+        $this->editing = $this->makeBlankTransaction();
+    }
     public function updatedFilters() { $this->resetPage(); }
 
     public function exportSelected()
@@ -73,7 +64,7 @@ class DatangBarang extends Component
 
     public function makeBlankTransaction()
     {
-        return IzinModel::make(['date' => now(), 'status' => 'success']);
+        return DatabarangModel::make(['date' => now(), 'status' => 'success']);
     }
 
     public function toggleShowFilters()
@@ -92,7 +83,7 @@ class DatangBarang extends Component
         $this->showEditModal = true;
     }
 
-    public function edit(IzinModel $transaction)
+    public function edit(DatabarangModel $transaction)
     {
         $this->useCachedRows();
 
@@ -106,10 +97,7 @@ class DatangBarang extends Component
         $this->validate();
 
         $this->editing->fill([
-            'nomor_izin_impor' => mt_rand( 1000000000, 9999999999 ),
-            'user_id' => Auth::id(),
-            'status' => 'Diajukan',
-            'upload_dokumen' => $this->upload->store('izin_impor'),
+            'nomor_pengajuan_dokumen' => $this->filters['nomor_pengajuan_dokumen'],
         ]);
 
         $this->emitSelf('notify-saved');
@@ -123,12 +111,9 @@ class DatangBarang extends Component
 
     public function getRowsQueryProperty()
     {
-        $query = IzinModel::query()
-            ->when($this->filters['status'], fn($query, $status) => $query->where('status', $status))
-            ->when($this->filters['perusahaan'], fn($query, $perusahaan) => $query->where('perusahaan', 'like', '%'.$perusahaan.'%'))
-            ->when($this->filters['date-min'], fn($query, $date) => $query->where('awal_berlaku', '>=', Carbon::parse($date)))
-            ->when($this->filters['date-max'], fn($query, $date) => $query->where('akhir_berlaku', '<=', Carbon::parse($date)))
-            ->when($this->filters['search'], fn($query, $search) => $query->where('nomor_izin_impor', 'like', '%'.$search.'%'));
+        $query = DatabarangModel::query()
+            ->when($this->filters['search'], fn($query, $search) => $query->where('nomor', $search ))
+            ->when($this->filters['nomor_pengajuan_dokumen'], fn($query, $nomor_pengajuan_dokumen) => $query->where('nomor_pengajuan_dokumen', $nomor_pengajuan_dokumen));
 
         return $this->applySorting($query);
     }
@@ -144,7 +129,7 @@ class DatangBarang extends Component
     {
         return view('livewire.datang-barang', [
             'items' => $this->rows,
-            // 'nomor_aju_pabean' => $nomor_aju_pabean,
+            'nomor_aju_pabean' => $this->filters['nomor_pengajuan_dokumen'],
         ]);
     }
 }

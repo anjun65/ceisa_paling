@@ -19,9 +19,12 @@
             </div>
              <div class="bg-white py-8 px-4 shadow sm:rounded-lg sm:px-10" style="padding-top:25vh">
               
-                <div class="grid grid-cols-2 gap-4">
-                    <img class="w-1/2 h-auto items-end" style="margin-left:40%" src="/img/logobc150.png" alt="">
-                    <img class="w-1/2 h-auto" src="/img/logo-poltek.png" alt="">
+                <div class="grid grid-cols-5 gap-4">                    
+                    <img class="h-3/4 align-middle inline-block" src="/img/Sp.png" alt="">
+                    <img class="h-3/4 align-middle inline-block" src="/img/bej.png" alt="">
+                    <img class="h-3/4 align-middle inline-block" src="/img/ilo.png" alt="">
+                    <img class="h-3/4 align-middle inline-block" src="/img/logobc150.png" alt="">
+                    <img class="h-3/4 align-middle inline-block" src="/img/logo-poltek.png" alt="">
                 </div>
                 <h1 class="text-2xl font-semibold text-gray-900 my-4">Selamat datang di Simulasi  Logistik CEISA 4.0</h1>
                 

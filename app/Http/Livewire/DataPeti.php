@@ -110,7 +110,8 @@ class DataPeti extends Component
     public function getRowsQueryProperty()
     {
         $query = PetiKemasDokumenPabeanModel::query()
-            ->when($this->filters['search'], fn($query, $search) => $query->where('seri', $search ));
+            ->when($this->filters['search'], fn($query, $search) => $query->where('seri', $search ))
+            ->when($this->filters['nomor_pengajuan_dokumen'], fn($query, $nomor_pengajuan_dokumen) => $query->where('nomor_pengajuan_dokumen', $nomor_pengajuan_dokumen));
 
         return $this->applySorting($query);
     }

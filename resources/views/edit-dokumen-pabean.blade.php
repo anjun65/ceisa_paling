@@ -184,6 +184,14 @@
                                 </div>
                                 <form action="{{ route('store-pabean') }}" method="POST" enctype="multipart/form-data">
                                     @csrf
+                                                @if(session()->has('message'))
+                                                    <div class="alert alert-success">
+                                                        {{ session()->get('message') }}
+                                                    </div>
+                                                    <div class="p-4 mb-4 text-sm text-green-700 bg-green-100 rounded-lg dark:bg-green-200 dark:text-green-800" role="alert">
+                                                        <span class="font-medium">Success alert!</span> Change a few things up and try submitting again.
+                                                    </div>
+                                                @endif
                                                 <div class="bg-white rounded shadow hover:shadow-md duration-4">
                                                     <div class="flex flex-row justify-between uppercase font-bold text-blue-dark border-b p-6">
                                                         <p>Data Pengajuan<p>
@@ -352,17 +360,17 @@
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
                                                             <label for="nama_penerima" class="block text-sm font-medium text-gray-700 mb-4">Nama Penerima</label>
-                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="nama_penerima"  id="nama_penerima" @isset($items->nama_penerima) value="{{ $items->$nama_penerima }}" @endisset placeholder="Nama Penerima" />
+                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="nama_penerima"  id="nama_penerima" @isset($items->nama_penerima) value="{{ $items->nama_penerima }}" @endisset placeholder="Nama Penerima" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
                                                             <label for="alamat_penerima" class="block text-sm font-medium text-gray-700 mb-4">Alamat Penerima</label>
-                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="alamat_penerima"  id="alamat_penerima" @isset($items->alamat_penerima) value="{{ $items->$alamat_penerima }}" @endisset placeholder="Nomor Pengajuan" />
+                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="alamat_penerima"  id="alamat_penerima" @isset($items->alamat_penerima) value="{{ $items->alamat_penerima }}" @endisset placeholder="Nomor Pengajuan" />
                                                         </div>
 
                                                         <div class="px-6 pt-6 text-grey-darker text-justify flex flex-col">
                                                             <label for="nomor_ijin_bpk_penerima" class="block text-sm font-medium text-gray-700 mb-4">Nomor Ijin Bpk Penerima</label>
-                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="nomor_ijin_bpk_penerima"  id="nomor_ijin_bpk_penerima" @isset($items->nomor_ijin_bpk_penerima) value="{{ $items->$nomor_ijin_bpk_penerima }}" @endisset placeholder="Nomor Ijin Bpk Penerima" />
+                                                            <input class="flex-1 form-input border-cool-gray-300 block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5" name="nomor_ijin_bpk_penerima"  id="nomor_ijin_bpk_penerima" @isset($items->nomor_ijin_bpk_penerima) value="{{ $items->nomor_ijin_bpk_penerima }}" @endisset placeholder="Nomor Ijin Bpk Penerima" />
                                                         </div>
 
                                                     </div>

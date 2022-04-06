@@ -111,7 +111,8 @@ class DataKemasan extends Component
     public function getRowsQueryProperty()
     {
         $query = KemasanDokumenPabeanModel::query()
-            ->when($this->filters['search'], fn($query, $search) => $query->where('nomor', $search ));
+            ->when($this->filters['search'], fn($query, $search) => $query->where('nomor', $search ))
+            ->when($this->filters['nomor_pengajuan_dokumen'], fn($query, $nomor_pengajuan_dokumen) => $query->where('nomor_pengajuan_dokumen', $nomor_pengajuan_dokumen));
 
         return $this->applySorting($query);
     }
