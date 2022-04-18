@@ -9,8 +9,6 @@ use App\Http\Livewire\DataTable\WithPerPagePagination;
 
 class Home extends Component
 {
-
-    use WithPerPagePagination;
     
     public function render()
     {

@@ -25,5 +25,6 @@
         x-ref="input"
         x-bind:value="value"
         class="rounded-none rounded-r-md flex-1 form-input block w-full transition duration-150 ease-in-out sm:text-sm sm:leading-5"
+        autocomplete="off"
     />
 </div>
